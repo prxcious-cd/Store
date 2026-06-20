@@ -1,1 +1,428 @@
-# Store
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO META TAGS -->
+<title>NOVA STORE | Premium Products. Modern Living.</title>
+<meta name="description" content="NOVA STORE — Discover carefully selected premium products designed to elevate your everyday lifestyle. Fashion, electronics, accessories and lifestyle goods.">
+<meta name="keywords" content="nova store, premium products, online store, modern lifestyle products">
+<meta name="author" content="NOVA STORE">
+
+<!-- Open Graph -->
+<meta property="og:title" content="NOVA STORE | Premium Products. Modern Living.">
+<meta property="og:description" content="Discover carefully selected products designed to elevate your everyday lifestyle.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">NOVA<span>STORE</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO SECTION ============ -->
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+    <!-- CHANGE HERO TEXT HERE -->
+    <p class="hero-tag">WELCOME TO NOVA STORE</p>
+    <h1 class="hero-title">Premium Products.<br>Modern Living.</h1>
+    <p class="hero-subtitle">Discover carefully selected products designed to elevate your everyday lifestyle.</p>
+    <div class="hero-buttons">
+      <a href="#products" class="btn btn-primary">Shop Now</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="hero-blob"></div>
+    <div class="hero-card hero-card-1">✦ Free Shipping</div>
+    <div class="hero-card hero-card-2">✦ 30-Day Returns</div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip">
+  <div class="trust-item reveal">🚚 Fast Worldwide Delivery</div>
+  <div class="trust-item reveal">🔒 Secure Checkout</div>
+  <div class="trust-item reveal">⭐ Rated 4.9/5 by Customers</div>
+  <div class="trust-item reveal">↺ Easy 30-Day Returns</div>
+</section>
+
+<!-- ============ FEATURED PRODUCTS ============ -->
+<section class="products" id="products">
+  <div class="section-header reveal">
+    <p class="section-tag">OUR COLLECTION</p>
+    <h2 class="section-title">Featured Products</h2>
+    <p class="section-subtitle">Hand-picked essentials, built to last and designed to impress.</p>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- ADD NEW PRODUCT HERE -->
+    <div class="product-card reveal" data-id="1" data-name="Aero Wireless Headphones" data-price="129">
+      <div class="product-image">
+        <!-- CHANGE PRODUCT IMAGE HERE -->
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><circle cx="100" cy="90" r="40" fill="#c7ccd4"/><rect x="60" y="130" width="80" height="14" rx="7" fill="#c7ccd4"/></svg>
+        <span class="badge">New</span>
+      </div>
+      <div class="product-info">
+        <h3>Aero Wireless Headphones</h3>
+        <p class="product-desc">Studio-grade sound with adaptive noise cancellation.</p>
+        <!-- CHANGE PRODUCT PRICE HERE -->
+        <div class="product-bottom">
+          <span class="price">$129.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="2" data-name="Minimal Leather Wallet" data-price="59">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><rect x="40" y="70" width="120" height="70" rx="10" fill="#c7ccd4"/></svg>
+      </div>
+      <div class="product-info">
+        <h3>Minimal Leather Wallet</h3>
+        <p class="product-desc">Full-grain leather wallet with slim, modern profile.</p>
+        <div class="product-bottom">
+          <span class="price">$59.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="3" data-name="Nova Smart Watch" data-price="199">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><rect x="70" y="50" width="60" height="100" rx="16" fill="#c7ccd4"/></svg>
+        <span class="badge">Bestseller</span>
+      </div>
+      <div class="product-info">
+        <h3>Nova Smart Watch</h3>
+        <p class="product-desc">Track fitness, sleep and notifications in elegant style.</p>
+        <div class="product-bottom">
+          <span class="price">$199.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="4" data-name="Everyday Tote Bag" data-price="79">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><path d="M50 90h100v60H50z" fill="#c7ccd4"/><path d="M75 90v-20a25 25 0 0150 0v20" stroke="#c7ccd4" stroke-width="8" fill="none"/></svg>
+      </div>
+      <div class="product-info">
+        <h3>Everyday Tote Bag</h3>
+        <p class="product-desc">Durable canvas tote built for daily essentials.</p>
+        <div class="product-bottom">
+          <span class="price">$79.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="5" data-name="Nova Sunglasses" data-price="89">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><circle cx="75" cy="100" r="25" fill="#c7ccd4"/><circle cx="125" cy="100" r="25" fill="#c7ccd4"/></svg>
+      </div>
+      <div class="product-info">
+        <h3>Nova Sunglasses</h3>
+        <p class="product-desc">UV400 protection with a timeless minimal frame.</p>
+        <div class="product-bottom">
+          <span class="price">$89.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="6" data-name="Portable Speaker" data-price="99">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><rect x="65" y="50" width="70" height="100" rx="20" fill="#c7ccd4"/></svg>
+        <span class="badge">New</span>
+      </div>
+      <div class="product-info">
+        <h3>Portable Speaker</h3>
+        <p class="product-desc">Rich, room-filling sound in a compact design.</p>
+        <div class="product-bottom">
+          <span class="price">$99.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="7" data-name="Comfort Knit Hoodie" data-price="69">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><path d="M60 70l40-15 40 15v75H60z" fill="#c7ccd4"/></svg>
+      </div>
+      <div class="product-info">
+        <h3>Comfort Knit Hoodie</h3>
+        <p class="product-desc">Soft, breathable fabric for everyday comfort.</p>
+        <div class="product-bottom">
+          <span class="price">$69.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-id="8" data-name="Desk Lamp Pro" data-price="49">
+      <div class="product-image">
+        <svg viewBox="0 0 200 200" class="ph-img"><rect width="200" height="200" rx="20" fill="#eef0f3"/><rect x="95" y="80" width="10" height="60" fill="#c7ccd4"/><circle cx="100" cy="70" r="25" fill="#c7ccd4"/></svg>
+      </div>
+      <div class="product-info">
+        <h3>Desk Lamp Pro</h3>
+        <p class="product-desc">Adjustable LED lamp with three lighting modes.</p>
+        <div class="product-bottom">
+          <span class="price">$49.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="categories">
+  <div class="section-header reveal">
+    <p class="section-tag">BROWSE</p>
+    <h2 class="section-title">Shop by Category</h2>
+  </div>
+  <div class="category-grid">
+    <div class="category-card reveal">
+      <div class="category-icon">👕</div>
+      <h3>Fashion</h3>
+    </div>
+    <div class="category-card reveal">
+      <div class="category-icon">🎧</div>
+      <h3>Electronics</h3>
+    </div>
+    <div class="category-card reveal">
+      <div class="category-icon">⌚</div>
+      <h3>Accessories</h3>
+    </div>
+    <div class="category-card reveal">
+      <div class="category-icon">🏠</div>
+      <h3>Lifestyle</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US / ABOUT ============ -->
+<section class="why-us" id="about">
+  <div class="section-header reveal">
+    <p class="section-tag">WHY NOVA STORE</p>
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle">We're committed to quality, speed, and a seamless shopping experience.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">⚡</div>
+      <h3>Fast Delivery</h3>
+      <p>Quick, reliable shipping to get your order to you faster.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">💎</div>
+      <h3>Premium Quality</h3>
+      <p>Every product is tested and curated for lasting quality.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🤝</div>
+      <h3>Trusted Service</h3>
+      <p>Thousands of happy customers trust NOVA STORE every month.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">💬</div>
+      <h3>Customer Support</h3>
+      <p>Friendly, responsive support whenever you need help.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="section-header reveal">
+    <p class="section-tag">TESTIMONIALS</p>
+    <h2 class="section-title">What Our Customers Say</h2>
+  </div>
+
+  <!-- CHANGE TESTIMONIALS HERE -->
+  <div class="review-grid">
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>"The quality completely exceeded my expectations. Packaging felt premium and shipping was fast."</p>
+      <div class="reviewer">
+        <div class="avatar">SM</div>
+        <div>
+          <h4>Sarah M.</h4>
+          <span>Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>"I've ordered three times now and every single product has been excellent. Highly recommend NOVA STORE."</p>
+      <div class="reviewer">
+        <div class="avatar">JD</div>
+        <div>
+          <h4>James D.</h4>
+          <span>Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>"Customer support was so helpful when I had a question about sizing. Will definitely shop here again."</p>
+      <div class="reviewer">
+        <div class="avatar">AL</div>
+        <div>
+          <h4>Amara L.</h4>
+          <span>Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="section-header reveal">
+    <p class="section-tag">FAQ</p>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-question">How long does shipping take? <span>+</span></button>
+      <div class="faq-answer"><p>Orders typically arrive within 3-7 business days depending on your location.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What is your return policy? <span>+</span></button>
+      <div class="faq-answer"><p>We offer a hassle-free 30-day return policy on all unused items.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you ship internationally? <span>+</span></button>
+      <div class="faq-answer"><p>Yes, we ship to most countries worldwide with tracked delivery.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How can I track my order? <span>+</span></button>
+      <div class="faq-answer"><p>You'll receive a tracking link by email as soon as your order ships.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How do I contact support? <span>+</span></button>
+      <div class="faq-answer"><p>Reach us anytime via WhatsApp, Instagram, or email — see the Contact section below.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-header reveal">
+    <p class="section-tag">GET IN TOUCH</p>
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">We'd love to hear from you. Reach out anytime.</p>
+  </div>
+  <div class="contact-grid reveal">
+    <!-- CHANGE WHATSAPP NUMBER HERE -->
+    <a href="https://wa.me/15551234567" target="_blank" class="contact-card">
+      <div class="contact-icon">💬</div>
+      <h3>WhatsApp</h3>
+      <p>+1 (555) 123-4567</p>
+    </a>
+    <!-- CHANGE INSTAGRAM LINK HERE -->
+    <a href="https://instagram.com/novastore" target="_blank" class="contact-card">
+      <div class="contact-icon">📷</div>
+      <h3>Instagram</h3>
+      <p>@novastore</p>
+    </a>
+    <!-- CHANGE EMAIL HERE -->
+    <a href="mailto:hello@novastore.com" class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <h3>Email</h3>
+      <p>hello@novastore.com</p>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo">NOVA<span>STORE</span></a>
+      <p>Premium products for modern living.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <h4>Social Media</h4>
+      <!-- CHANGE INSTAGRAM LINK HERE -->
+      <a href="https://instagram.com/novastore" target="_blank">Instagram</a>
+      <!-- CHANGE WHATSAPP NUMBER HERE -->
+      <a href="https://wa.me/15551234567" target="_blank">WhatsApp</a>
+      <!-- CHANGE EMAIL HERE -->
+      <a href="mailto:hello@novastore.com">Email</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> NOVA STORE. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ CART SIDEBAR ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Your cart is empty.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <!-- CHANGE WHATSAPP NUMBER HERE -->
+    <button class="btn btn-primary cart-checkout-btn" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+  </html>
